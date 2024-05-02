@@ -1,0 +1,60 @@
+{
+    "name": "sakanjo/filament-reset-action",
+    "description": "A Filament action to reset the form state.",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "actions",
+        "filament-actions"
+    ],
+    "authors": [
+        {
+            "name": "Salah Kanjo",
+            "email": "dev.salah.kanjo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.2",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.1",
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^2.3",
+        "phpstan/phpstan": "^1.1",
+        "pestphp/pest-plugin-livewire": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaKanjo\\FilamentResetAction\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SaKanjo\\FilamentResetAction\\Tests\\": "tests/src/",
+            "SaKanjo\\FilamentResetAction\\Tests\\Database\\Factories\\": "tests/database/factories"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SaKanjo\\FilamentResetAction\\FilamentResetActionServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/bin/pint --test",
+            "@php vendor/bin/phpstan",
+            "@php vendor/bin/pest --parallel"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
