@@ -10,7 +10,7 @@
 
 > ✨ Help support the maintenance of this package by [sponsoring me](https://github.com/sponsors/sakanjo).
 
-![Preview](./art/preview.gif)
+![Preview](https://github.com/sakanjo/filament-reset-action/art/preview.gif)
 
 Table of Contents
 =================
@@ -88,7 +88,7 @@ Click the ["💖 Sponsor"](https://github.com/sponsors/sakanjo) at the top of th
 ## ©️ Credits
 
 - [Salah Kanjo](https://github.com/sakanjo)
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/sakanjo/filament-reset-action/contributors)
 
 ## 📄 License
 
