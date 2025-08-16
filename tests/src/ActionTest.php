@@ -4,6 +4,8 @@ use Livewire\Livewire;
 use SaKanjo\FilamentResetAction\Tests\Models\User;
 use SaKanjo\FilamentResetAction\Tests\Panels\Admin\Resources\UserResource\Pages;
 
+use function Pest\Livewire\livewire;
+
 it('reset forms correctly on create page', function () {
     Livewire::test(Pages\CreateUser::class)
         ->fillForm([
@@ -11,7 +13,7 @@ it('reset forms correctly on create page', function () {
             'email' => 'dev.salah.kanjo@gmail.com',
         ])
         ->callAction('reset')
-        ->assertFormSet([
+        ->assertSchemaStateSet([
             'name' => null,
             'email' => null,
         ]);
@@ -20,7 +22,7 @@ it('reset forms correctly on create page', function () {
 it('reset forms correctly on edit page', function () {
     $user = User::factory()->create();
 
-    Livewire::test(Pages\EditUser::class, [
+    livewire(Pages\EditUser::class, [
         'record' => $user->getKey(),
     ])
         ->fillForm([
@@ -28,7 +30,7 @@ it('reset forms correctly on edit page', function () {
             'email' => 'dev.salah.kanjo@gmail.com',
         ])
         ->callAction('reset')
-        ->assertFormSet([
+        ->assertSchemaStateSet([
             'name' => $user->name,
             'email' => $user->email,
         ]);
