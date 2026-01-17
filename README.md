@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://github.com/sakanjo/filament-reset-action/actions"><img alt="Workflow status" src="https://img.shields.io/github/actions/workflow/status/sakanjo/filament-reset-action/tests.yml?style=for-the-badge"></a>
     <a href="https://laravel.com"><img alt="Laravel v11+" src="https://img.shields.io/badge/Laravel-v11+-FF2D20?style=for-the-badge&logo=laravel"></a>
-    <a href="https://php.net"><img alt="PHP 8.2+" src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php"></a>
+    <a href="https://php.net"><img alt="PHP 8.4+" src="https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge&logo=php"></a>
 </p>
 
 <p align="center">A Filament action to reset the form state.</p>
